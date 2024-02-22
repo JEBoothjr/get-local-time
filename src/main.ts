@@ -31,7 +31,7 @@ export default class GetLocalTimePlugin extends Plugin {
       const gmtTime = this.getLocalTimeInTimeZone(timezone);
 
       this.app.fileManager.processFrontMatter(file, (frontmatter) => {
-        if(frontmatter["local_time"]){
+        if(fm?.hasOwnProperty('local_time')){
           frontmatter["local_time"] = gmtTime;
         }else{
           frontmatter["localtime"] = gmtTime;

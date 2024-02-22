@@ -55,7 +55,7 @@ var GetLocalTimePlugin = class extends import_obsidian.Plugin {
     }
     const gmtTime = this.getLocalTimeInTimeZone(timezone);
     this.app.fileManager.processFrontMatter(file, (frontmatter) => {
-      if (frontmatter["local_time"]) {
+      if (fm == null ? void 0 : fm.hasOwnProperty("local_time")) {
         frontmatter["local_time"] = gmtTime;
       } else {
         frontmatter["localtime"] = gmtTime;
