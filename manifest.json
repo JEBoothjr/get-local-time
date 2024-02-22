@@ -1,0 +1,12 @@
+{
+	"id": "get-local-time",
+	"name": "Get Local Time",
+	"version": "1.0.0",
+	"minAppVersion": "1.4.0",
+	"description": "Uses a 'timezone' or 'time_zone' frontmatter property and populates a 'localtime' or 'local_time' frontmatter property with the current day/time in that timezone.",
+	"author": "JEBoothjr",
+	"authorUrl": "https://github.com/JEBoothjr",
+	"fundingUrl": "https://ko-fi.com/jeboothjr",
+  "helpUrl": "https://github.com/JEBoothjr/set-accessed-time",
+	"isDesktopOnly": false
+}
